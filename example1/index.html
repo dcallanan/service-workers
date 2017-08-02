@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Service Workers - Example 1 - Hosted on Github Pages</title>
+</head>
+<body>
+	<h1> Welcome to Flappy Bird!</h1>
+	<h3> Play online with your friends and see who can get the best score, or play on your own in singleplayer mode! </h3>
+	<div style="width: 300px; height: 500px; background: black; color: #333; font-weight: bold;">This is an example and therefore you can't actually play flappy bird here. Either get it on your phone or head over to flaap.io</div>
+</body>
+<script>
+
+if ('serviceWorker' in navigator)
+{
+	navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</html>
